@@ -14,7 +14,8 @@
 		
 	<!-- deck.js -->
 		<link rel="stylesheet" href="../_scripts/deck.js/core/deck.core.css">
-		<link rel="stylesheet" href="../_styles/deck.js/themes/style/web-2.0.css">
+		<link rel="stylesheet" href="../_scripts/deck.js/extensions/hash/deck.hash.css">
+		<link rel="stylesheet" href="../_styles/deck.js/themes/style/ls.css">
 		<link rel="stylesheet" href="../_styles/deck.js/themes/transition/horizontal-slide.css">
 		
 		<script src="../_scripts/libs/modernizr-2.5.3.min.js"></script>
@@ -23,32 +24,110 @@
 		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 		
 		<section class="slide" id="title-slide">
-			<h1>Getting Started with deck.js</h1>
+			<h1>An <abbr title="HyperText Markup Language">HTML</abbr> Primer</h1>
 		</section>
 		
-		<section class="slide" id="how-to-overview">
-			<h2>How to Make a Deck</h2>
+		<section class="slide" id="what-is-html">
+			<h2>What is HTML?</h2>
+
 			<ol>
-				<li>
-					<h3>Write Slides</h3>
-					<p>Slide content is simple&nbsp;HTML.</p>
-				</li>
-				<li>
-					<h3>Choose Themes</h3>
-					<p>One for slide styles and one for deck&nbsp;transitions.</p>
-				</li>
-				<li>
-					<h3>Include Extensions</h3>
-					<p>Add extra functionality to your deck, or leave it stripped&nbsp;down.</p>
-				</li>
+				<li class="slide">HyperText Markup Language</li>
+				<li class="slide">Three major flavors: HTML, XHTML, HTML 5</li>
+				<li class="slide">Made up of tags</li>
 			</ol>
 		</section>
+		
+		<section class="slide" id="markup-language">
+			<h2>&ldquo;Markup Language&rdquo;</h2>
+			
+			<ol>
+				<li class="slide">Write HTML for the meaning, not the display</li>
+				<li class="slide">Easy for humans:<br>
+					Meet Miles for lunch, today at noon.</li>
+				<li class="slide">Easy for robots:<br>
+					<pre><code>&lt;event eventDateTime="2012-03-22 12:00:00"&gt;
+	&lt;persons&gt;
+		&lt;person name="Miles" /&gt;
+	&lt;/persons&gt;
+&lt;/event&gt;</code></li>
+				<li class="slide">Okay for both:<br>
+					<pre><code>&lt;div class="event"&gt;Meet &lt;a href="http://github.com/awayken" class="person"&gt;Miles&lt;/a&gt; for lunch, &lt;span class="datetime" title="2012-03-22 12:00:00"&gt;today at noon&lt;/span&gt;.&lt;/div&gt;</code></li></pre>
+			</ol>
+		</section>
+		
+		<section class="slide" id="anatomy-of-a-tag">
+			<h2>Anatomy of a tag</h2>
+			
+			<ol>
+				<li class="slide">Tag name</li>
+				<li class="slide">Attribute name</li>
+				<li class="slide">Attribute value</li>
+				<li class="slide">Tag content or text</li>
+			</ol>
+		</section>
+		
+		<section class="slide" id="a-simple-webpage">
+			<h2>A simple webpage</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Welcome to Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Welcome!&lt;/h1&gt;
+	&lt;p&gt;Welcome to our website!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+		</section>
+		
+		<section class="slide" id="head-tag">
+			<h2><code>&lt;head&gt;</code></h2>
+			
+			<ol>
+				<li>Metadata of web page</li>
+				<li>Made for browsers and search engines</li>
+				<li>Common tags: <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;title&gt;</code></li>
+			</ol>
+		</section>
+		
+		<section class="slide" id="body-tag">
+			<h2><code>&lt;body&gt;</code></h2>
+			
+			<ol>
+				<li>Content of web page</li>
+				<li>Made for browsers, search engines, and humans</li>
+				<li>Common tags: everything else</li>
+			</ol>
+		</section>
+		
+		<section class="slide" id="write-some-html">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<ol>
+				<li>Blog article: headings, paragraphs, hyperlinks</li>
+				<li>Dress it up: bold, emphasis, blockquote</li>
+			</ol>
+		</section>
+		
+<!--
+<section class="slide" id="TITLE">
+	<h2>TITLE</h2>
+	
+	
+</section>
+-->
+		
+		<!-- deck.hash snippet -->
+		<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="../_scripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
 		
 		<!-- deck.js -->
 		<script src="../_scripts/deck.js/core/deck.core.js"></script>
+		<script src="../_scripts/deck.js/extensions/hash/deck.hash.js"></script>
 		
 		<script src="_scripts/plugins.js"></script>
 		<script src="_scripts/script.js"></script>
