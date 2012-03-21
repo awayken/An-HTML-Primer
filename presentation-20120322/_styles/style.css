@@ -67,7 +67,12 @@ td { vertical-align: top; }
 
 
 
-
+.taganatomy { list-style: none; }
+.deck-container .taganatomy li { font-size: 200%; }
+.tagname { color: purple; }
+.attributename { color: green; }
+.attributevalue { color: navy; }
+.tagcontent { color: silver; }
 
 
 

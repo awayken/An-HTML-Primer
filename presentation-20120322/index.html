@@ -30,11 +30,11 @@
 		<section class="slide" id="what-is-html">
 			<h2>What is <abbr title="HyperText Markup Language">HTML</abbr>?</h2>
 
-			<ol>
+			<ul>
 				<li class="slide">HyperText Markup Language</li>
 				<li class="slide">Three major flavors: HTML, XHTML, HTML 5</li>
 				<li class="slide">Made up of tags</li>
-			</ol>
+			</ul>
 		</section>
 		
 		<section class="slide" id="markup-language">
@@ -52,19 +52,39 @@
 				<li class="slide">Okay for both:<br>
 					<pre><code>&lt;div class="event"&gt;Meet &lt;a href="http://github.com/awayken" class="person"&gt;Miles&lt;/a&gt; for lunch, &lt;span class="datetime" title="2012-03-22 12:00:00"&gt;today at noon&lt;/span&gt;.&lt;/div&gt;</code></pre>
 				</li>
-				<li class="slide">Write HTML for the meaning, not the display</li>
 			</ol>
+			<ul>
+				<li class="slide">Write HTML for the meaning, not the display</li>
+			</ul>
 		</section>
 		
 		<section class="slide" id="anatomy-of-a-tag">
 			<h2>Anatomy of a tag</h2>
 			
-			<ol>
-				<li class="slide">Tag name</li>
-				<li class="slide">Attribute name</li>
-				<li class="slide">Attribute value</li>
-				<li class="slide">Tag content or text</li>
-			</ol>
+			<ul class="taganatomy">
+				<li>&lt;<span class="tagname">p</span>&gt;<span class="tagcontent">Hello!</span>&lt;/<span class="tagname">p</span>&gt;</li>
+				<li>&lt;<span class="tagname">a</span> <span class="attributename">href</span>="<span class="attributevalue">index.html</span>"&gt;<span class="tagcontent">Homepage</span>&lt;/<span class="tagname">a</span>&gt;</li>
+				<li>&lt;<span class="tagname">img</span> <span class="attributename">src</span>="<span class="attributevalue">logo.jpg</span>" <span class="attributename">height</span>="<span class="attributevalue">100</span>" /&gt;</li>
+			</ul>
+			
+			<ul class="slide">
+				<li class="tagname">Tag name &ndash; starts and ends tags</li>
+				<li class="attributename">Attribute name &ndash; lowercase, equal after</li>
+				<li class="attributevalue">Attribute value &ndash; surround in quotes, equal before</li>
+				<li class="tagcontent">Tag content or text &ndash; must be "typeable", can be more HTML</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="anatomy-of-a-tag-quiz">
+			<h2>Anatomy of a tag (quiz)</h2>
+			
+			<ul class="taganatomy">
+				<li class="slide">&lt;div class=&quot;tree&quot;&gt;Birch Tree&lt;/div&gt;</li>
+				<li class="slide">&lt;p&gt;I &lt;strong&gt;really really &lt;em&gt;really&lt;/em&gt;&lt;/strong&gt; disagree.&lt;/p&gt;</li>
+				<li class="slide">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot; /&gt;</li>
+				<li class="slide">&lt;textarea id=&quot;mytext&quot; name=&quot;mytext&quot; cols=&quot;30&quot; rows=&quot;5&quot;&gt;Type here.&lt;/textarea&gt;</li>
+			</ul>
+			
 		</section>
 		
 		<section class="slide" id="a-simple-webpage">
@@ -81,35 +101,116 @@
 	&lt;p&gt;Welcome to our website!&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
+			<ul>
+				<li class="slide">Doctype &ndash; important, hard to remember so copy &amp; paste</li>
+				<li class="slide"><code>&lt;html&gt;</code> &ndash; wraps the whole page</li>
+				<li class="slide"><code>&lt;head&gt;</code></li>
+				<li class="slide"><code>&lt;body&gt;</code></li>
+			</ul>
+			
 		</section>
 		
 		<section class="slide" id="head-tag">
 			<h2><code>&lt;head&gt;</code></h2>
 			
-			<ol>
-				<li>Metadata of web page</li>
-				<li>Made for browsers and search engines</li>
-				<li>Common tags: <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;title&gt;</code></li>
-			</ol>
+			<ul>
+				<li class="slide">Metadata of web page</li>
+				<li class="slide">Made for browsers and search engines</li>
+				<li class="slide">Common tags: <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;title&gt;</code></li>
+			</ul>
 		</section>
 		
 		<section class="slide" id="body-tag">
 			<h2><code>&lt;body&gt;</code></h2>
 			
-			<ol>
-				<li>Content of web page</li>
-				<li>Made for browsers, search engines, and humans</li>
-				<li>Common tags: everything else</li>
+			<ul>
+				<li class="slide">Content of web page</li>
+				<li class="slide">Made for browsers, search engines, and humans</li>
+				<li class="slide">Common tags: everything else</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-block">
+			<h2>Block elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; &ndash; headings, decreasingly important</li>
+				<li>&lt;p&gt; &ndash; paragraphs</li>
+				<li>&lt;ul&gt;, &lt;ol&gt; &ndash; lists, unordered and ordered</li>
+				<li>&lt;li&gt; &ndash; a list item (used for both kinds of lists)</li>
+				<li>&lt;div&gt; &ndash; division</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-inline">
+			<h2>Inline elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;a&gt; &ndash; anchor, creates a hyperlink</li>
+				<li>&lt;em&gt; &ndash; emphasis, usually adds italic</li>
+				<li>&lt;strong&gt; &ndash; strength, usually adds bold</li>
+				<li>&lt;sup&gt; &ndash; superscript</li>
+				<li>&lt;sub&gt; &ndash; subscript</li>
+				<li>&lt;br /&gt; &ndash; adds a line break (no closing tag)</li>
+				<li>&lt;span&gt; &ndash; like &lt;div&gt; but stays in line</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-media">
+			<h2>Media elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;img&gt; &ndash; images (no closing tag)</li>
+				<li>&lt;object&gt;, &lt;embed&gt;, &lt;iframe&gt; &ndash; for embedding all kinds of crazy media (see Internet for examples)</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-table">
+			<h2>Table elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;table&gt; &ndash; creates the table</li>
+				<li>&lt;thead&gt;, &lt;tbody&gt; &ndash; organizes your table into head and body sections</li>
+				<li>&lt;tr&gt; &ndash; table row</li>
+				<li>&lt;th&gt; &ndash; table heading cell</li>
+				<li>&lt;td&gt; &ndash; table data cell</li>
+			</ul>
+		</section>
+
+		<section class="slide" id="write-some-html-1q">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			
+			<ol class="slide">
+				<li>Create a paragraph (&lt;p&gt;): I crawled out almost immediately, and crouched, my feet still in the water, under a clump of furze.</li>
+				<li>Add strong emphasis (&lt;strong&gt;) to the words: "almost immediately"</li>
+				<li>Hyperlink (&lt;a&gt;) the last word, furze, to: http://en.wiktionary.org/wiki/furze</li>
 			</ol>
 		</section>
 		
-		<section class="slide" id="write-some-html">
+		<section class="slide" id="write-some-html-1a">
 			<h2>Let&rsquo;s write some HTML!</h2>
 			
-			<ol>
-				<li>Blog article: headings, paragraphs, hyperlinks</li>
-				<li>Dress it up: bold, emphasis, blockquote</li>
-			</ol>
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;p&gt;I crawled out &lt;strong&gt;almost immediately&lt;/strong&gt;, and crouched, my feet still in the water, under a clump of &lt;a href=&quot;http://en.wiktionary.org/wiki/furze&quot;&gt;furze&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 		</section>
 		
 <!--
