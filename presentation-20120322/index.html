@@ -128,6 +128,7 @@
 				<li class="slide">Content of web page</li>
 				<li class="slide">Made for browsers, search engines, and humans</li>
 				<li class="slide">Common tags: everything else</li>
+				<li class="slide">Common attributes: <code>id</code>, <code>class</code>, <code>title</code>, <code>style</code></li>
 			</ul>
 		</section>
 		
@@ -137,8 +138,10 @@
 			<ul class="slide">
 				<li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; &ndash; headings, decreasingly important</li>
 				<li>&lt;p&gt; &ndash; paragraphs</li>
+				<li>&lt;blockquote&gt; &ndash; blockquote &ndash; <code>cite</code></li>
 				<li>&lt;ul&gt;, &lt;ol&gt; &ndash; lists, unordered and ordered</li>
 				<li>&lt;li&gt; &ndash; a list item (used for both kinds of lists)</li>
+				<li>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; &ndash; definition list, with definition term and definition data</li>
 				<li>&lt;div&gt; &ndash; division</li>
 			</ul>
 		</section>
@@ -147,9 +150,10 @@
 			<h2>Inline elements</h2>
 			
 			<ul class="slide">
-				<li>&lt;a&gt; &ndash; anchor, creates a hyperlink</li>
+				<li>&lt;a&gt; &ndash; anchor, creates a hyperlink &ndash; <code>href</code>, <code>target</code></li>
 				<li>&lt;em&gt; &ndash; emphasis, usually adds italic</li>
 				<li>&lt;strong&gt; &ndash; strength, usually adds bold</li>
+				<li>&lt;code&gt; &ndash; computer code, usually uses monospaced font</li>
 				<li>&lt;sup&gt; &ndash; superscript</li>
 				<li>&lt;sub&gt; &ndash; subscript</li>
 				<li>&lt;br /&gt; &ndash; adds a line break (no closing tag)</li>
@@ -161,8 +165,9 @@
 			<h2>Media elements</h2>
 			
 			<ul class="slide">
-				<li>&lt;img&gt; &ndash; images (no closing tag)</li>
-				<li>&lt;object&gt;, &lt;embed&gt;, &lt;iframe&gt; &ndash; for embedding all kinds of crazy media (see Internet for examples)</li>
+				<li>&lt;img /&gt; &ndash; images (no closing tag) &ndash; <code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code></li>
+				<li>&lt;object&gt;, &lt;param /&gt;, &lt;embed&gt; &ndash; for embedding all kinds of crazy media &ndash; see Internet for examples</li>
+				<li>&lt;iframe&gt; &ndash; used to display another URL in your HTML &ndash; <code>src</code>, <code>width</code>, <code>height</code>, <code>name</code>, <code>frameborder</code></li>
 			</ul>
 		</section>
 		
@@ -170,11 +175,11 @@
 			<h2>Table elements</h2>
 			
 			<ul class="slide">
-				<li>&lt;table&gt; &ndash; creates the table</li>
+				<li>&lt;table&gt; &ndash; creates the table &ndash; <code>width</code>, <code>summary</code></li>
 				<li>&lt;thead&gt;, &lt;tbody&gt; &ndash; organizes your table into head and body sections</li>
 				<li>&lt;tr&gt; &ndash; table row</li>
-				<li>&lt;th&gt; &ndash; table heading cell</li>
-				<li>&lt;td&gt; &ndash; table data cell</li>
+				<li>&lt;th&gt; &ndash; table heading cell &ndash; <code>colspan</code>, <code>rowspan</code>, <code>valign</code></li>
+				<li>&lt;td&gt; &ndash; table data cell &ndash; <code>colspan</code>, <code>rowspan</code>, <code>valign</code></li>
 			</ul>
 		</section>
 
@@ -208,7 +213,7 @@
 	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-	&lt;p&gt;I crawled out &lt;strong&gt;almost immediately&lt;/strong&gt;, and crouched, my feet still in the water, under a clump of &lt;a href=&quot;http://en.wiktionary.org/wiki/furze&quot;&gt;furze&lt;/a&gt;.&lt;/p&gt;
+	<em class="answer">&lt;p&gt;I crawled out &lt;strong&gt;almost immediately&lt;/strong&gt;, and crouched, my feet still in the water, under a clump of &lt;a href=&quot;http://en.wiktionary.org/wiki/furze&quot;&gt;furze&lt;/a&gt;.&lt;/p&gt;</em>
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 		</section>
@@ -235,3 +240,5 @@
 		<script src="_scripts/script.js"></script>
 	</body>
 </html>
+
+UnderwateDanced P _ _ _ _ 

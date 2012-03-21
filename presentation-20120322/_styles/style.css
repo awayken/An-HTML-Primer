@@ -73,6 +73,7 @@ td { vertical-align: top; }
 .attributename { color: green; }
 .attributevalue { color: navy; }
 .tagcontent { color: silver; }
+.slide em.answer { font-style: normal; color: black; }
 
 
 
