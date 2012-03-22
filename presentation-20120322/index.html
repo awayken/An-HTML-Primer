@@ -32,29 +32,8 @@
 
 			<ul>
 				<li class="slide">HyperText Markup Language</li>
-				<li class="slide">Three major flavors: HTML, XHTML, HTML 5</li>
-				<li class="slide">Made up of tags</li>
-			</ul>
-		</section>
-		
-		<section class="slide" id="markup-language">
-			<h2>&ldquo;Markup Language&rdquo;</h2>
-			
-			<ol>
-				<li class="slide">Easy for humans:<br>
-					Meet Miles for lunch, today at noon.</li>
-				<li class="slide">Easy for robots:<br>
-					<pre><code>&lt;event eventDateTime="2012-03-22 12:00:00"&gt;
-	&lt;persons&gt;
-		&lt;person name="Miles" /&gt;
-	&lt;/persons&gt;
-&lt;/event&gt;</code></li>
-				<li class="slide">Okay for both:<br>
-					<pre><code>&lt;div class="event"&gt;Meet &lt;a href="http://github.com/awayken" class="person"&gt;Miles&lt;/a&gt; for lunch, &lt;span class="datetime" title="2012-03-22 12:00:00"&gt;today at noon&lt;/span&gt;.&lt;/div&gt;</code></pre>
-				</li>
-			</ol>
-			<ul>
-				<li class="slide">Write HTML for the meaning, not the display</li>
+				<li class="slide">Made up of tags, which mark up your content</li>
+				<li class="slide">Tags adds meaning for humans and robots</li>
 			</ul>
 		</section>
 		
@@ -114,21 +93,21 @@
 		<section class="slide" id="head-tag">
 			<h2><code>&lt;head&gt;</code></h2>
 			
-			<ul>
-				<li class="slide">Metadata of web page</li>
-				<li class="slide">Made for browsers and search engines</li>
-				<li class="slide">Common tags: <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;title&gt;</code></li>
+			<ul class="slide">
+				<li>Metadata of web page</li>
+				<li>Made for browsers and search engines</li>
+				<li>Common tags: <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;title&gt;</code></li>
 			</ul>
 		</section>
 		
 		<section class="slide" id="body-tag">
 			<h2><code>&lt;body&gt;</code></h2>
 			
-			<ul>
-				<li class="slide">Content of web page</li>
-				<li class="slide">Made for browsers, search engines, and humans</li>
-				<li class="slide">Common tags: everything else</li>
-				<li class="slide">Common attributes: <code>id</code>, <code>class</code>, <code>title</code>, <code>style</code></li>
+			<ul class="slide">
+				<li>Content of web page</li>
+				<li>Made for browsers, search engines, and humans</li>
+				<li>Common tags: everything else</li>
+				<li>Common attributes: <code>id</code>, <code>class</code>, <code>title</code>, <code>style</code></li>
 			</ul>
 		</section>
 		
@@ -152,7 +131,7 @@
 			<ul class="slide">
 				<li>&lt;a&gt; &ndash; anchor, creates a hyperlink &ndash; <code>href</code>, <code>target</code></li>
 				<li>&lt;em&gt; &ndash; emphasis, usually adds italic</li>
-				<li>&lt;strong&gt; &ndash; strength, usually adds bold</li>
+				<li>&lt;strong&gt; &ndash; strong emphasis, usually adds bold</li>
 				<li>&lt;code&gt; &ndash; computer code, usually uses monospaced font</li>
 				<li>&lt;sup&gt; &ndash; superscript</li>
 				<li>&lt;sub&gt; &ndash; subscript</li>
@@ -162,7 +141,7 @@
 		</section>
 		
 		<section class="slide" id="body-tags-media">
-			<h2>Media elements</h2>
+			<h2>Media and Frame elements</h2>
 			
 			<ul class="slide">
 				<li>&lt;img /&gt; &ndash; images (no closing tag) &ndash; <code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code></li>
@@ -176,11 +155,23 @@
 			
 			<ul class="slide">
 				<li>&lt;table&gt; &ndash; creates the table &ndash; <code>width</code>, <code>summary</code></li>
-				<li>&lt;thead&gt;, &lt;tbody&gt; &ndash; organizes your table into head and body sections</li>
+				<li>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; &ndash; organizes your table into head, body, and foot sections</li>
 				<li>&lt;tr&gt; &ndash; table row</li>
 				<li>&lt;th&gt; &ndash; table heading cell &ndash; <code>colspan</code>, <code>rowspan</code>, <code>valign</code></li>
 				<li>&lt;td&gt; &ndash; table data cell &ndash; <code>colspan</code>, <code>rowspan</code>, <code>valign</code></li>
 			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-more">
+			<h2>MOAR HTML PLZ!</h2>
+			
+			<ul class="slide">
+				<li>View Source</li>
+				<li>Ask us</li>
+				<li><a href="http://dl.dropbox.com/u/41609448/art329/index.html" target="_blank">My Web Design course</a>, <a href="https://developer.mozilla.org/en/HTML" target="_blank">Mozilla Developer Network</a>, <a href="http://htmldog.com/" target="_blank">HTML Dog</a>, <a href="http://www.w3.org/standards/webdesign/htmlcss" target="_blank">HTML &amp; CSS on W3C</a></li>
+				<li>Buy a book, like <a href="http://shop.oreilly.com/product/9780596101978.do" target="_blank">Head First HTML with CSS &amp; XHTML</a></li>
+			</ul>
+			
 		</section>
 
 		<section class="slide" id="write-some-html-1q">
@@ -197,9 +188,9 @@
 &lt;/html&gt;</code></pre>
 			
 			<ol class="slide">
-				<li>Create a paragraph (&lt;p&gt;): I crawled out almost immediately, and crouched, my feet still in the water, under a clump of furze.</li>
-				<li>Add strong emphasis (&lt;strong&gt;) to the words: "almost immediately"</li>
-				<li>Hyperlink (&lt;a&gt;) the last word, furze, to: http://en.wiktionary.org/wiki/furze</li>
+				<li>Create a paragraph: I crawled out almost immediately, and crouched, my feet still in the water, under a clump of furze.</li>
+				<li>Add strong emphasis to these words: almost immediately</li>
+				<li>Hyperlink the last word, furze, to: http://en.wiktionary.org/wiki/furze</li>
 			</ol>
 		</section>
 		
@@ -213,18 +204,66 @@
 	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-	<em class="answer">&lt;p&gt;I crawled out &lt;strong&gt;almost immediately&lt;/strong&gt;, and crouched, my feet still in the water, under a clump of &lt;a href=&quot;http://en.wiktionary.org/wiki/furze&quot;&gt;furze&lt;/a&gt;.&lt;/p&gt;</em>
+<em class="answer">&lt;p&gt;I crawled out &lt;strong&gt;almost immediately&lt;/strong&gt;, and crouched, my feet still in the water, under a clump of &lt;a href=&quot;http://en.wiktionary.org/wiki/furze&quot;&gt;furze&lt;/a&gt;.&lt;/p&gt;</em>
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 		</section>
 		
-<!--
-<section class="slide" id="TITLE">
-	<h2>TITLE</h2>
-	
-	
-</section>
--->
+		<section class="slide" id="write-some-html-2q">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			
+			<ol class="slide">
+				<li>Add a div with a class of "buymybook"</li>
+				<li>Add an image, use "bookcover.jpg" for the source and give it a class of "alignright"</li>
+				<li>Add a heading, level 2: Four Reasons To Buy My Book</li>
+				<li>Add an ordered list: 1. My book is awesome. 2. My book will make you awesome. 3. You are awesome. 4. I am awesome.</li>
+				<li>Add a hyperlink, give it a class of "button", link it to "http://www.l-s.com", and use the text "Buy My Book!"</li>
+			</ol>
+		</section>
+		
+		<section class="slide" id="write-some-html-2a">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<em class="answer">&lt;div class=&quot;buymybook&quot;&gt;
+	&lt;img src=&quot;bookcover.jpg&quot; class=&quot;alignright&quot; alt=&quot;My book cover!&quot; /&gt;
+	&lt;h2&gt;Four Reasons To Buy My Book&lt;/h2&gt;
+	&lt;ol&gt;
+		&lt;li&gt;My book is awesome.&lt;/li&gt;
+		&lt;li&gt;My book will make you awesome.&lt;/li&gt;
+		&lt;li&gt;You are awesome.&lt;/li&gt;
+		&lt;li&gt;I am awesome.&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;a href=&quot;http://www.l-s.com&quot; class=&quot;button&quot;&gt;Buy My Book!&lt;/a&gt;
+&lt;/div&gt;</em>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+		</section>
+		
+		<section class="slide" id="title-questions">
+			<h1>Questions or Examples?</h1>
+		</section>
+		
+		<section class="slide" id="title-thanks">
+			<h1>Thanks!</h1>
+		</section>
 		
 		<!-- deck.hash snippet -->
 		<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
