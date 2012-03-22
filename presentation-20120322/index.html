@@ -1,0 +1,282 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>An HTML Primer (2012-03-22)</title>
+		<meta name="description" content="An HTML Primer, given as an internal presentation to Lawrence &amp; Schiller on 2012-03-22.">
+		
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="_styles/style.css">
+		
+	<!-- deck.js -->
+		<link rel="stylesheet" href="../_scripts/deck.js/core/deck.core.css">
+		<link rel="stylesheet" href="../_scripts/deck.js/extensions/hash/deck.hash.css">
+		<link rel="stylesheet" href="../_styles/deck.js/themes/style/ls.css">
+		<link rel="stylesheet" href="../_styles/deck.js/themes/transition/horizontal-slide.css">
+		
+		<script src="../_scripts/libs/modernizr-2.5.3.min.js"></script>
+	</head>
+	<body class="deck-container">
+		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+		
+		<section class="slide" id="title-slide">
+			<h1>An <abbr title="HyperText Markup Language">HTML</abbr> Primer</h1>
+		</section>
+		
+		<section class="slide" id="what-is-html">
+			<h2>What is <abbr title="HyperText Markup Language">HTML</abbr>?</h2>
+
+			<ul>
+				<li class="slide">HyperText Markup Language</li>
+				<li class="slide">Made up of tags, which mark up your content</li>
+				<li class="slide">Tags adds meaning for humans and robots</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="anatomy-of-a-tag">
+			<h2>Anatomy of a tag</h2>
+			
+			<ul class="taganatomy">
+				<li>&lt;<span class="tagname">p</span>&gt;<span class="tagcontent">Hello!</span>&lt;/<span class="tagname">p</span>&gt;</li>
+				<li>&lt;<span class="tagname">a</span> <span class="attributename">href</span>="<span class="attributevalue">index.html</span>"&gt;<span class="tagcontent">Homepage</span>&lt;/<span class="tagname">a</span>&gt;</li>
+				<li>&lt;<span class="tagname">img</span> <span class="attributename">src</span>="<span class="attributevalue">logo.jpg</span>" <span class="attributename">height</span>="<span class="attributevalue">100</span>" /&gt;</li>
+			</ul>
+			
+			<ul class="slide">
+				<li class="tagname">Tag name &ndash; starts and ends tags</li>
+				<li class="attributename">Attribute name &ndash; lowercase, equal after</li>
+				<li class="attributevalue">Attribute value &ndash; surround in quotes, equal before</li>
+				<li class="tagcontent">Tag content or text &ndash; must be "typeable", can be more HTML</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="anatomy-of-a-tag-quiz">
+			<h2>Anatomy of a tag (quiz)</h2>
+			
+			<ul class="taganatomy">
+				<li class="slide">&lt;div class=&quot;tree&quot;&gt;Birch Tree&lt;/div&gt;</li>
+				<li class="slide">&lt;p&gt;I &lt;strong&gt;really really &lt;em&gt;really&lt;/em&gt;&lt;/strong&gt; disagree.&lt;/p&gt;</li>
+				<li class="slide">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot; /&gt;</li>
+				<li class="slide">&lt;textarea id=&quot;mytext&quot; name=&quot;mytext&quot; cols=&quot;30&quot; rows=&quot;5&quot;&gt;Type here.&lt;/textarea&gt;</li>
+			</ul>
+			
+		</section>
+		
+		<section class="slide" id="a-simple-webpage">
+			<h2>A simple webpage</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Welcome to Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Welcome!&lt;/h1&gt;
+	&lt;p&gt;Welcome to our website!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+			<ul>
+				<li class="slide">Doctype &ndash; important, hard to remember so copy &amp; paste</li>
+				<li class="slide"><code>&lt;html&gt;</code> &ndash; wraps the whole page</li>
+				<li class="slide"><code>&lt;head&gt;</code></li>
+				<li class="slide"><code>&lt;body&gt;</code></li>
+			</ul>
+			
+		</section>
+		
+		<section class="slide" id="head-tag">
+			<h2><code>&lt;head&gt;</code></h2>
+			
+			<ul class="slide">
+				<li>Metadata of web page</li>
+				<li>Made for browsers and search engines</li>
+				<li>Common tags: <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;title&gt;</code></li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tag">
+			<h2><code>&lt;body&gt;</code></h2>
+			
+			<ul class="slide">
+				<li>Content of web page</li>
+				<li>Made for browsers, search engines, and humans</li>
+				<li>Common tags: everything else</li>
+				<li>Common attributes: <code>id</code>, <code>class</code>, <code>title</code>, <code>style</code></li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-block">
+			<h2>Block elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; &ndash; headings, decreasingly important</li>
+				<li>&lt;p&gt; &ndash; paragraphs</li>
+				<li>&lt;blockquote&gt; &ndash; blockquote &ndash; <code>cite</code></li>
+				<li>&lt;ul&gt;, &lt;ol&gt; &ndash; lists, unordered and ordered</li>
+				<li>&lt;li&gt; &ndash; a list item (used for both kinds of lists)</li>
+				<li>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; &ndash; definition list, with definition term and definition data</li>
+				<li>&lt;div&gt; &ndash; division</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-inline">
+			<h2>Inline elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;a&gt; &ndash; anchor, creates a hyperlink &ndash; <code>href</code>, <code>target</code></li>
+				<li>&lt;em&gt; &ndash; emphasis, usually adds italic</li>
+				<li>&lt;strong&gt; &ndash; strong emphasis, usually adds bold</li>
+				<li>&lt;code&gt; &ndash; computer code, usually uses monospaced font</li>
+				<li>&lt;sup&gt; &ndash; superscript</li>
+				<li>&lt;sub&gt; &ndash; subscript</li>
+				<li>&lt;br /&gt; &ndash; adds a line break (no closing tag)</li>
+				<li>&lt;span&gt; &ndash; like &lt;div&gt; but stays in line</li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-media">
+			<h2>Media and Frame elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;img /&gt; &ndash; images (no closing tag) &ndash; <code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code></li>
+				<li>&lt;object&gt;, &lt;param /&gt;, &lt;embed&gt; &ndash; for embedding all kinds of crazy media &ndash; see Internet for examples</li>
+				<li>&lt;iframe&gt; &ndash; used to display another URL in your HTML &ndash; <code>src</code>, <code>width</code>, <code>height</code>, <code>name</code>, <code>frameborder</code></li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-table">
+			<h2>Table elements</h2>
+			
+			<ul class="slide">
+				<li>&lt;table&gt; &ndash; creates the table &ndash; <code>width</code>, <code>summary</code></li>
+				<li>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; &ndash; organizes your table into head, body, and foot sections</li>
+				<li>&lt;tr&gt; &ndash; table row</li>
+				<li>&lt;th&gt; &ndash; table heading cell &ndash; <code>colspan</code>, <code>rowspan</code>, <code>valign</code></li>
+				<li>&lt;td&gt; &ndash; table data cell &ndash; <code>colspan</code>, <code>rowspan</code>, <code>valign</code></li>
+			</ul>
+		</section>
+		
+		<section class="slide" id="body-tags-more">
+			<h2>MOAR HTML PLZ!</h2>
+			
+			<ul class="slide">
+				<li>View Source</li>
+				<li>Ask us</li>
+				<li><a href="http://dl.dropbox.com/u/41609448/art329/index.html" target="_blank">My Web Design course</a>, <a href="https://developer.mozilla.org/en/HTML" target="_blank">Mozilla Developer Network</a>, <a href="http://htmldog.com/" target="_blank">HTML Dog</a>, <a href="http://www.w3.org/standards/webdesign/htmlcss" target="_blank">HTML &amp; CSS on W3C</a></li>
+				<li>Buy a book, like <a href="http://shop.oreilly.com/product/9780596101978.do" target="_blank">Head First HTML with CSS &amp; XHTML</a></li>
+			</ul>
+			
+		</section>
+
+		<section class="slide" id="write-some-html-1q">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			
+			<ol class="slide">
+				<li>Create a paragraph: I crawled out almost immediately, and crouched, my feet still in the water, under a clump of furze.</li>
+				<li>Add strong emphasis to these words: almost immediately</li>
+				<li>Hyperlink the last word, furze, to: http://en.wiktionary.org/wiki/furze</li>
+			</ol>
+		</section>
+		
+		<section class="slide" id="write-some-html-1a">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<em class="answer">&lt;p&gt;I crawled out &lt;strong&gt;almost immediately&lt;/strong&gt;, and crouched, my feet still in the water, under a clump of &lt;a href=&quot;http://en.wiktionary.org/wiki/furze&quot;&gt;furze&lt;/a&gt;.&lt;/p&gt;</em>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+		</section>
+		
+		<section class="slide" id="write-some-html-2q">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			
+			<ol class="slide">
+				<li>Add a div with a class of "buymybook"</li>
+				<li>Add an image, use "bookcover.jpg" for the source and give it a class of "alignright"</li>
+				<li>Add a heading, level 2: Four Reasons To Buy My Book</li>
+				<li>Add an ordered list: 1. My book is awesome. 2. My book will make you awesome. 3. You are awesome. 4. I am awesome.</li>
+				<li>Add a hyperlink, give it a class of "button", link it to "http://www.l-s.com", and use the text "Buy My Book!"</li>
+			</ol>
+		</section>
+		
+		<section class="slide" id="write-some-html-2a">
+			<h2>Let&rsquo;s write some HTML!</h2>
+			
+			<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+	&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;Let&rsquo;s write some HTML!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<em class="answer">&lt;div class=&quot;buymybook&quot;&gt;
+	&lt;img src=&quot;bookcover.jpg&quot; class=&quot;alignright&quot; alt=&quot;My book cover!&quot; /&gt;
+	&lt;h2&gt;Four Reasons To Buy My Book&lt;/h2&gt;
+	&lt;ol&gt;
+		&lt;li&gt;My book is awesome.&lt;/li&gt;
+		&lt;li&gt;My book will make you awesome.&lt;/li&gt;
+		&lt;li&gt;You are awesome.&lt;/li&gt;
+		&lt;li&gt;I am awesome.&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;a href=&quot;http://www.l-s.com&quot; class=&quot;button&quot;&gt;Buy My Book!&lt;/a&gt;
+&lt;/div&gt;</em>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+		</section>
+		
+		<section class="slide" id="title-questions">
+			<h1>Questions or Examples?</h1>
+		</section>
+		
+		<section class="slide" id="title-thanks">
+			<h1>Thanks!</h1>
+		</section>
+		
+		<!-- deck.hash snippet -->
+		<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../_scripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
+		
+		<!-- deck.js -->
+		<script src="../_scripts/deck.js/core/deck.core.js"></script>
+		<script src="../_scripts/deck.js/extensions/hash/deck.hash.js"></script>
+		
+		<script src="_scripts/plugins.js"></script>
+		<script src="_scripts/script.js"></script>
+	</body>
+</html>
+
