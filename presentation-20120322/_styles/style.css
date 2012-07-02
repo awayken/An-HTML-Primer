@@ -17,7 +17,7 @@ a:visited { color: #551a8b; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-abbr[title] { border-bottom: 1px dotted; }
+abbr[title] { border-bottom: 1px dotted; font-size: 1.8em; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
 dfn { font-style: italic; }
